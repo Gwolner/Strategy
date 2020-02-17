@@ -16,7 +16,7 @@ Sendo asssim, um pato de borracha não irá voar nem irá grasnar, mas sim perma
 
 Um exemplo de mudança dinamica no comportamento seria, por exemplo, atribuir ao pato de madeira a caracteristica de voar através de um foguete. Esta alteração de comportamento pode ser visto no snippet abaixo.
 
-``` 
+```java
 PatoDeMadeira pdm = new PatoDeMadeira();
 pdm.exibir();
 pdm.setVooBehavior(new Foguete());
