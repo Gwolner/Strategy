@@ -14,7 +14,7 @@ A solução foi adotar o padrão comportamental Strategy, um dos tipos de Padrõ
 
 Sendo asssim, um pato de borracha não irá voar nem irá grasnar, mas sim permanecer imóvel e emitir um som de apito. O pato de madeira não irá voar e não irá emitir som algum. Já os patos reais irão grasnar e voar livremente.
 
-Um exemplo de mudança dinamica no comportamento seria, por exemplo, atribuir ao pato de madeira a caracteristica de voar através de um foguete. Esta alteração de comportamento pode ser visto no snippet abaixo.
+Um exemplo de mudança dinamica no comportamento seria, por exemplo, atribuir ao pato de madeira a caracteristica de voar através de um foguete. Esta alteração de comportamento pode ser visto abaixo.
 
 ```java
 PatoDeMadeira pdm = new PatoDeMadeira();
