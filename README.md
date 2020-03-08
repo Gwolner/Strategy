@@ -17,10 +17,90 @@ Sendo asssim, um pato de borracha não irá voar nem irá grasnar, mas sim perma
 Um exemplo de mudança dinamica no comportamento seria, por exemplo, atribuir ao pato de madeira a caracteristica de voar através de um foguete. Esta alteração de comportamento pode ser visto abaixo.
 
 ```java
-PatoDeMadeira pdm = new PatoDeMadeira();
-pdm.exibir();
-pdm.setVooBehavior(new Foguete());
-pdm.performVoo();
+public class SimUDuck {
+
+    public static void main(String[] args) {
+        
+        //Forma baseada no padrão GoF Strategy
+        Mallard mallard = new Mallard();
+        
+        mallard.exibir();
+        mallard.performQuack();
+        mallard.nadar();
+        mallard.performQuack();
+        mallard.performVoo();
+        
+        System.out.println("\n");
+        
+        CabecaVermelha cv = new CabecaVermelha();
+        
+        cv.exibir();
+        cv.performQuack();
+        cv.nadar();
+        cv.performQuack();
+        cv.performVoo();
+        
+        System.out.println("\n");
+        
+        PatoDeBorracha pdb = new PatoDeBorracha();
+        
+        pdb.exibir();
+        pdb.performQuack();
+        pdb.nadar();
+        pdb.performQuack();
+        pdb.performVoo();
+        
+        System.out.println("\n");
+        
+        PatoDeMadeira pdm = new PatoDeMadeira();
+        
+        pdm.exibir();
+        pdm.performQuack();
+        pdm.nadar();
+        pdm.performQuack();
+        pdm.performVoo();
+        
+        System.out.println("\nUm foguete será equipado no Pato de Madeira \n");
+        
+        pdm.exibir();
+        pdm.setVooBehavior(new Foguete());
+        pdm.performVoo();
+    }
+```
+
+```java
+//Saída
+Imagem do pato Mallard
+Quack!!
+Mallard está nadando...
+Quack!!
+Está voando!
+
+
+Imagem do pato Cabeça-Vermelha
+Quack!!
+Cabeça-Vermelha está nadando...
+Quack!!
+Está voando!
+
+
+Imagem do pato Pato de borracha
+Squeeeak!!
+Pato de borracha está nadando...
+Squeeeak!!
+Não pode voar!
+
+
+Imagem do pato Pato de madeira
+<< Silêncio >>
+Pato de madeira está nadando...
+<< Silêncio >>
+Não pode voar!
+
+Um foguete será equipado no Pato de Madeira 
+
+Imagem do pato Pato de madeira
+>>Decolando<<
 ```
 
 ## Ideia do projeto
