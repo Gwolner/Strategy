@@ -1,6 +1,6 @@
 # SimUDuck - Simulador de patos
 
-Simulador de patos que permite visualizar diversos comportamentos dos mais variádos tipos de patos, sejam animais (Marreco, Cabeça-Vermelha, Mallard) ou objetos inanimados (Pato de borracha, Pato de madeira.)
+> Simulador de patos que permite visualizar diversos comportamentos dos mais variádos tipos de patos, sejam animais (Marreco, Cabeça-Vermelha, Mallard) ou objetos inanimados (Pato de borracha, Pato de madeira.)
 
 ## Objetivo
 
