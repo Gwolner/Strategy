@@ -1,10 +1,10 @@
-package simuduck;
+package main;
 
 import behavior.Foguete;
-import modelos.patos.CabecaVermelha;
-import modelos.patos.Mallard;
-import modelos.patos.PatoDeBorracha;
-import modelos.patos.PatoDeMadeira;
+import modelos.CabecaVermelha;
+import modelos.Mallard;
+import modelos.PatoDeBorracha;
+import modelos.PatoDeMadeira;
 
 
 /**

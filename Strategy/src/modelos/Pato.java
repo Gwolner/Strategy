@@ -1,4 +1,4 @@
-package modelos.patos;
+package modelos;
 
 import behavior.QuackBehavior;
 import behavior.VooBehavior;

@@ -1,4 +1,4 @@
-package modelos.patos;
+package modelos;
 
 import behavior.Apitar;
 import behavior.NaoVoar;
